@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "arial", "tahoma", "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53";
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-size: 62.5%;
+	-webkit-text-size-adjust: none;
+}
+@media (min-width: 375px) {
+	
+}
+body {
+	max-width: 640px;
+	margin: 0 auto;
+}
+// video::-webkit-media-controls-enclosure {
+//     overflow:hidden;
+// }
+// video::-webkit-media-controls-panel {
+//     width: calc(100% + 30px);
+// }
+.f-tac {
+	text-align: center;
+}
+.f-toe {
+	overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.f-fwb {
+	font-weight: bold;
+}
+.m-edit .table {
+	display: table;
+	width: 100%;
+	margin: 10px 0 25px;
+}
+.m-edit .table .row {
+	overflow: hidden;
+}
+.m-edit .table .cell {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 6px;
+}
+.m-edit .table .cell:first-child {
+	width: 16px;
+}
+.m-edit .table .cell:first-child img {
+	width: 100%;
+	display: block;
+}
+.m-edit .table .cell:last-child {
+	text-align: right;
+	padding-right: 0;
+	float: right;
+}
+.m-edit .table .name {
+	font-size: 1rem;
+	color: #9099b4;
+	line-height: 1em;
+
+}
+.m-edit .table .time {
+	font-size: 1rem;
+	color: #9ea1ad;
+	line-height: 1.4em;
+
+}
+.m-edit .table .kuang {
+	font-size: 9px;
+	color: #4285F4;
+	line-height: 14px;
+	border: 1px solid #4285F4;
+	border-radius: 10px;
+	padding: 0 7px;
+}
+.m-edit .table .pinglun {
+	font-size: 1.2rem;
+	color: #9ea1ad;
+	line-height: 1.5em;
+	background: url(../images/info.png) no-repeat left center;
+	background-size: auto 100%;
+	padding-left: 22px;
+	display: inline-block;
+}
+.m-edit .table .pinglun span {
+	background-color: #b32424;
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin-left: 4px;
+	padding: 3px 6px;
+}
+.m-edit .content_images{
+	padding-bottom: 10px;
+}
+
+.m-edit .content_images img {
+	display: block;
+	width: 100%;
+	margin: 10px auto;
+}
+.m-edit {
+	padding: 10px 12px;
+}
+.m-edit p, .m-edit .content_images{
+	font-size: 1.6rem;
+	line-height: 1.8em;
+	color: #2d3859;
+	word-wrap: break-word;
+}
+.m-edit a {
+	text-decoration: none;
+}
+.m-edit .m-title {
+	color: #2d3859;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-top: 10px;
+	text-align: left;
+}
+.m-edit .m-list {
+	font-size: 1rem;
+	margin: 15px auto 15px;
+	text-align: left;
+}
+.m-edit .m-list span {
+	width: 70px;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	border-radius: 2px;
+	color: #9099B4;
+	float: left;
+	font-size: 1rem;
+	line-height: normal;
+	background-color: #FAFBFD;
+	margin: 0 6px 6px 0;
+}
+.m-edit p.boinfo{
+	font-size: 1.0rem;
+	line-height:2em;
+	color: #b9bbc5;
+}
+
+body.black{
+	background-color: #141f33;
+}
+body.black .m-edit .m-title{
+	color: #c3cce6;
+}
+body.black .m-edit .table .name{
+	color: #527acc;
+}
+body.black .m-edit p, .m-edit .content_images, body.black .toinfo, body.black .m-edit .table .pinglun, body.black .m-edit .m-list span.time, body.black .boinfo{
+	color: #8f98b3 !important;
+}
+body.black .m-edit .m-list span{
+	border-color: #8f98b3 !important;
+}
+
+.ke-video {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 15px;
+}
+.ke-video video {
+
+}
+.ke-video .playControl {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../images/play.png) center no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20px, -20px);
+    -webkit-transform: translate(-20px, -20px);
+    z-index: 100;
+    cursor: pointer;
+}
+.ke-video .times {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 0 5px;
+    background-color: #000;
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.69;
+    border-radius: 8px;
+    display: none;
+}
+.ke-video .playTit {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 0 15px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ke-audio {
+	background: #EBEBF2; border: 1px solid #DDDDDD; border-radius: 2px; padding: 13px 15px 9px;
+	margin: 0 auto 15px;
+}
+
+.ke-audio .playTitle {
+	font-size: 16px; color: #596380; line-height: 22px; margin: 0 0 3px;
+	text-align: center;
+}
+
+.ke-audio .audioControl {
+	height: 27px;
+	position: relative;
+}
+
+.ke-audio .audioControl .playTime {
+	width: 45px;
+	color: #2d3859;
+	font-size: 14px;
+	line-height: 27px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ke-audio .audioControl .playBtn {
+	width:27px;
+	height: 27px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/audioPlay.png) center no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	cursor: pointer;
+}
+
+.ke-audio .audioControl .pause {
+	background: url(../images/pause.png) center no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.ke-audio .audioControl .progress {
+	display: block;
+	height: 27px;
+	margin: 0 45px;
+	position: relative;
+}
+.ke-audio .audioControl .progress .line {
+	width: 100%;
+	height: 1px;
+	background: #C2CCE7;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.ke-audio .audioControl .progress .hasPlay {
+	width: 0%;
+	height: 4px;
+	border-radius: 2px;
+	background: #5682D9;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.ke-audio .audioControl .progress .handle {
+	display: block;
+	cursor: move;
+	background: #FFFFFF;
+	width: 8px;
+	height: 8px;
+	border: 3px solid #5682D9;
+	border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
