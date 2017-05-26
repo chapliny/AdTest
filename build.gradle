@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    //声明一个变量来保存 kotlin 的版本
     ext.kotlin_version = '1.1.2-4'
     repositories {
         jcenter()
@@ -8,6 +9,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.2'
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.2'
+        //引入 kotlin 插件
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

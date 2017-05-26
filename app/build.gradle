@@ -46,6 +46,10 @@ dependencies {
     //    // For testing
     compile files('libs/afinal_0.5_bin.jar')
     compile files('libs/jsoup-1.10.2.jar')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
@@ -56,13 +60,14 @@ dependencies {
     compile 'com.facebook.litho:litho-widget:0.2.0'
     compile 'com.facebook.soloader:soloader:0.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'com.alibaba:fastjson:1.1.46.android'
+    compile 'com.taobao.android:weex_sdk:0.5.1@aar'
     testCompile 'junit:junit:4.12'
     testCompile 'com.facebook.litho:litho-testing:0.2.0'
     annotationProcessor 'com.facebook.litho:litho-processor:0.2.0'
     debugCompile 'com.facebook.litho:litho-stetho:0.2.0'
     debugCompile 'com.facebook.litho:litho-fresco:0.2.0'
     provided 'com.facebook.litho:litho-annotations:0.2.0'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 
 

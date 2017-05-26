@@ -127,6 +127,7 @@ public class MyDemoListActivity extends Activity {
         mDatas.add("Lottie测试");
         mDatas.add("Test22222222");
         mDatas.add("Test33333");
+        mDatas.add("WeexTest");
 
     }
 
@@ -158,6 +159,9 @@ public class MyDemoListActivity extends Activity {
                             MyDemoListActivity.this.startActivity(new Intent(MyDemoListActivity.this,MyDemoLithoActivity.class));
                             break;
                         case 4:
+                            MyDemoListActivity.this.startActivity(new Intent(MyDemoListActivity.this,MyWebViewActivity2.class));
+                            break;
+                        case 5:
                             MyDemoListActivity.this.startActivity(new Intent(MyDemoListActivity.this,MyWebViewActivity2.class));
                             break;
                     }
