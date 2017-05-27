@@ -68,6 +68,7 @@ dependencies {
     debugCompile 'com.facebook.litho:litho-stetho:0.2.0'
     debugCompile 'com.facebook.litho:litho-fresco:0.2.0'
     provided 'com.facebook.litho:litho-annotations:0.2.0'
+
 }
 
 

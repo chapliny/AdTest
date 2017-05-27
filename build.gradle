@@ -23,6 +23,32 @@ allprojects {
     }
 }
 
+subprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    buildscript {
+        repositories {
+            mavenCentral()
+            jcenter()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:2.3.2'
+        }
+    }
+    ext {
+        compileSdkVersion=24
+        buildToolsVersion="23.0.2"
+        minSdkVersion=14
+        appMinSdkVersion=15
+        targetSdkVersion=23
+        supportLibVersion="24.2.0"
+        fastjsonLibVersion="1.1.46.android"
+    }
+}
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
